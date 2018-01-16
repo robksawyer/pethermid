@@ -18,10 +18,11 @@ async function action({ fetch }) {
     }),
   });
   const { data } = await resp.json();
-  if (!data || !data.news) throw new Error('Failed to load the news feed.');
+  if (!data || !data.news)
+    throw new Error('Failed to load the transaction feed.');
   return {
     chunks: ['home'],
-    title: 'React Starter Kit',
+    title: 'Pethermid',
     component: (
       <Layout>
         <Home news={data.news} />

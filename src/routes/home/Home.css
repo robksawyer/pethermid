@@ -12,6 +12,30 @@
 .root {
   padding-left: 20px;
   padding-right: 20px;
+
+  h1 {
+    font-size: 5.2rem;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  h5 {
+    font-size: 1.5rem;
+  }
+
+  h6 {
+    font-size: 1rem;
+  }
 }
 
 .container {
@@ -20,7 +44,7 @@
   max-width: var(--max-content-width);
 }
 
-.newsItem {
+/* .newsItem {
   margin: 0 0 2rem;
 }
 
@@ -46,4 +70,53 @@
   img {
     max-width: 100%;
   }
+} */
+
+/* .hero p {
+  text-align: center;
+} */
+
+.details {
+  align-content: center;
+  text-align: center;
+}
+
+.details .address {
+  position: relative;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 5px 7px;
+  margin: 15px 0;
+  width: 40%;
+}
+
+.details .address input {
+  border: none;
+  background: transparent;
+  font-size: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+.details .qr {
+  padding: 10px;
+}
+
+.how {
+  width: 60%;
+  margin: 20px auto 0 auto;
+  text-align: left;
+}
+
+.how ol {
+  padding: 0;
+  margin: 0 0 0 25px;
+}
+
+.how ol li {
+  margin-bottom: 20px;
+}
+
+.how .warning {
+  color: red;
 }
