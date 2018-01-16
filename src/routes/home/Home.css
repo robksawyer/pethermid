@@ -76,6 +76,26 @@
   text-align: center;
 } */
 
+.banner {
+  text-align: center;
+  background-color: #7a9e9f;
+}
+
+.bannerTitle {
+  margin: 0;
+  padding: 10px;
+  font-weight: normal;
+  font-size: 4em;
+  line-height: 1em;
+}
+
+.bannerDesc {
+  padding: 0;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.25em;
+  margin: 0;
+}
+
 .details {
   align-content: center;
   text-align: center;
@@ -103,20 +123,15 @@
 }
 
 .how {
-  width: 60%;
-  margin: 20px auto 0 auto;
-  text-align: left;
+  align-content: center;
+  width: 100%;
+  background-color: #79c7c5;
 }
 
 .how ol {
-  padding: 0;
-  margin: 0 0 0 25px;
+  color: #f7f7f7;
 }
 
 .how ol li {
-  margin-bottom: 20px;
-}
-
-.how .warning {
-  color: red;
+  margin-bottom: 7px;
 }

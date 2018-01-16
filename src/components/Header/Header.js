@@ -22,30 +22,17 @@ class Header extends React.Component {
         <div className={s.container}>
           <Navigation />
           <Link className={s.brand} to="/">
-            <span className={s.brandTxt}>
+            <span className={s.brandTxt} title="Pethermid">
               P<img
                 src={logoUrl}
                 srcSet={`${logoUrl2x} 2x`}
-                width="38"
-                height="38"
+                width="24"
+                height="24"
+                style={{ marginTop: '-5px' }}
                 alt="ether"
               />mid
             </span>
           </Link>
-          <div className={s.banner}>
-            <h1 className={s.bannerTitle}>
-              P<img
-                src={logoUrl}
-                srcSet={`${logoUrl2x} 2x`}
-                width="38"
-                height="38"
-                alt="ether"
-              />mid
-            </h1>
-            <p className={s.bannerDesc}>
-              A distributed pyramid of Ethereum coins.
-            </p>
-          </div>
         </div>
       </div>
     );
