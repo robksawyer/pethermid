@@ -107,31 +107,29 @@ class Home extends Component {
             </div>
             <ol className="sans-serif list pl0 f5 fw2">
               <li>
-                &bull; Send your desired amount of Ethereum coin(s) via QR code or
-                link. Minimum is one(1) coin. <span className={'fw6'}>If you send less, we keep as donation.</span>
+                &bull; Accept desired amount of Ethereum coin(s) via QR code or link. Minimum is one(1) coin. <span className={'fw6'}>If you send less, we keep as donation.</span>
               </li>
-              <li>&bull; We process six(6) new transactions randomly.</li>
+              <li>&bull; Process six(6) new transactions randomly and log the hash the transaction was delivered from.</li>
+              <li>&bull; Randomly remove one hash from the stack. This is how you get more money!</li>
               <li>
-                &bull; Add the total Ethereum collected from the random
-                transactions. Math!
-              </li>
-              <li>
-                &bull; Remove the 2% transaction fee.&nbsp;Why? For coin
-                distribution and running service.
-              </li>
-              <li>&bull; Divide the rest of the Ethereum coins.</li>
-              <li>
-                &bull; Distribute coins to the users who were participants in the
-                transaction group.
+                &bull; Add the total Ethereum collected from the transactions. Math!
               </li>
               <li>
-                &bull; You potentially get more Ethereum than you originally
-                invested.
+                &bull; Remove the 2% transaction fee.&nbsp;Why? For coin distribution and running service.
+              </li>
+              <li>&bull; Divide the rest of the Ethereum coins among the remaining hashes.</li>
+              <li>
+                &bull; Distribute coins to the hashes (users) who were participants in the transaction group.
+              </li>
+              <li>
+                &bull; You potentially get more Ethereum than you originally invested.
               </li>
               <li className="pv3 fw3 f4">
                 <span className="fw4">No refunds.</span>&nbsp;
                 <span className="fw5">Play at your own risk.</span>&nbsp;
                 <span className="fw6">No guarantees of any kind.</span>
+                <span className="fw6">No complaining.</span>
+                <span className="fw6">Just be happy and have fun.</span>
               </li>
             </ol>
           </div>
