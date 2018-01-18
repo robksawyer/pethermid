@@ -15,6 +15,7 @@ import { CopyToClipboard } from 'react-copy-to-clipboard';
 import s from './Home.css';
 import logoUrl from './logo-small.png';
 import logoUrl2x from './logo-small@2x.png';
+import pyramid from './golden-triangle.png';
 
 class Home extends Component {
   // static propTypes = {
@@ -60,9 +61,10 @@ class Home extends Component {
         <div className={s.root}>
           <div className={s.container}>
             <div className={s.details}>
-              <div className="lh-title f2 sans-serif pv3">
-                Send coins to following address to get started.
+              <div className="lh-title f2 sans-serif pt3">
+                Send coin(s) to following address to get started.
               </div>
+              <small className={'silver f6 dib pb3'}>If you send less than one(1) coin, we consider it a donation. And we don't have time for refunds.</small>
               {this.state.copied ? (
                 <div style={{ color: 'green' }}>Copied!</div>
               ) : (
@@ -98,39 +100,44 @@ class Home extends Component {
             ))} */}
           </div>
         </div>
-        <div className={`${s.how} ph5 pv4`}>
-          <div className="lh-title f2 fw3 sans-serif pv2 white">
-            How does the coin pyramid work?
+        <div className={`${s.how} cf ph5 pv4`}>
+          <div className={'fl w-50'}>
+            <div className="lh-title f2 fw3 sans-serif pv2 white">
+              How does the coin pyramid work?
+            </div>
+            <ol className="sans-serif list pl0 f5 fw2">
+              <li>
+                &bull; Send your desired amount of Ethereum coin(s) via QR code or
+                link. Minimum is one(1) coin. <span className={'fw6'}>If you send less, we keep as donation.</span>
+              </li>
+              <li>&bull; We process six(6) new transactions randomly.</li>
+              <li>
+                &bull; Add the total Ethereum collected from the random
+                transactions. Math!
+              </li>
+              <li>
+                &bull; Remove the 2% transaction fee.&nbsp;Why? For coin
+                distribution and running service.
+              </li>
+              <li>&bull; Divide the rest of the Ethereum coins.</li>
+              <li>
+                &bull; Distribute coins to the users who were participants in the
+                transaction group.
+              </li>
+              <li>
+                &bull; You potentially get more Ethereum than you originally
+                invested.
+              </li>
+              <li className="pv3 fw3 f4">
+                <span className="fw4">No refunds.</span>&nbsp;
+                <span className="fw5">Play at your own risk.</span>&nbsp;
+                <span className="fw6">No guarantees of any kind.</span>
+              </li>
+            </ol>
           </div>
-          <ol className="sans-serif list pl0 f4 fw2">
-            <li>
-              &bull; Send your desired amount of Ethereum coins via QR code or
-              link.
-            </li>
-            <li>&bull; We process five new transactions randomly.</li>
-            <li>
-              &bull; Add the total Ethereum collected from the random
-              transactions. Math!
-            </li>
-            <li>
-              &bull; Remove the 2% transaction fee.&nbsp;Why? For coin
-              distribution and running service.
-            </li>
-            <li>&bull; Divide the rest of the Ethereum coins.</li>
-            <li>
-              &bull; Distribute coins to the users who were participants in the
-              transaction group.
-            </li>
-            <li>
-              &bull; You potentially get more Ethereum than you originally
-              invested.
-            </li>
-            <li className="pv3 fw3 f4">
-              <span className="fw4">No refunds.</span>&nbsp;
-              <span className="fw5">Play at your own risk.</span>&nbsp;
-              <span className="fw6">No guarantees of any kind.</span>
-            </li>
-          </ol>
+          <div className={'fl w-50'}>
+            <img src={pyramid} alt="pyramid" className={'pl6 pv4'} />
+          </div>
         </div>
       </div>
     );
